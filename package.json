@@ -1,7 +1,7 @@
 {
   "name": "@apocryphal/dashboard-shell",
   "scripts": {
-    "start": "webpack serve",
+    "start": "webpack serve --port 9001",
     "start:standalone": "webpack serve --env standalone",
     "build": "concurrently yarn:build:*",
     "build:webpack": "webpack --mode=production",
@@ -49,6 +49,7 @@
   },
   "prettier": {
     "useTabs": true,
-    "tabWidth": 4
+    "tabWidth": 4,
+    "singleQuote": true
   }
 }
